@@ -16,10 +16,10 @@ function LoginController($scope,$state,Session) {
     $scope.signin = function(){
         if($scope.log.user==='admin' && $scope.log.password==='admin'){
             Session.set('admin',true);
+            $scope.adminOn();
             $state.go('admin-dashboard');
             return;
         }
-        console.log($scope.storage);
         if(!$scope.isEmpty($scope.log.user) && !$scope.isEmpty($scope.log.password)){
             if($scope.log.user===$scope.storage.user){
                 if($scope.log.password === $scope.storage.password){

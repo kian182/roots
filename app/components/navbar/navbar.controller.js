@@ -17,7 +17,7 @@ function NavbarController($scope,$state,Session) {
     };
 
     $scope.goHome = function(){
-        if(!Session.get('user').user || Session.get('user').user===''){
+        if(!Session.get('user') || !Session.get('user').user || Session.get('user').user===''){
             $state.go('home');
         }
         else{

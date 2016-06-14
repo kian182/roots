@@ -6,12 +6,8 @@ angular.module('app')
 /** @ngInject */
 function MainController($scope,$state,Session) {
 
-    console.log('main controller');
     $scope.uiRouterState = $state;
-    $scope.uiRouterState = $state;
-    $scope.admin = Session.get('admin');
-
-
+    $scope.admin = false;
 
     $scope.images = [
         {
@@ -37,12 +33,28 @@ function MainController($scope,$state,Session) {
     ];
 
     $scope.init = function(){
-
+        if(Session.get('admin')){
+           $scope.adminOn();
+           $state.go('admin-dashboard');
+        }
+        else{
+           $scope.adminOff();
+           $state.go('home');
+        }
     };
 
     $scope.goSignout = function(){
         $state.go('home');
+        $scope.adminOff();
         Session.set('admin',false);
+    };
+
+    $scope.adminOn = function(){
+        $scope.admin = true;
+    };
+
+    $scope.adminOff = function(){
+        $scope.admin = false;
     };
 
     $scope.init();
