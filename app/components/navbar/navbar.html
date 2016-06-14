@@ -1,0 +1,48 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top"
+        ng-class="{'navbar-shrink' : uiRouterState.current.name !== 'home' && uiRouterState.current.name !== 'login' && uiRouterState.current.name !== 'register' && uiRouterState.current.name !== 'dashboard'}">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="" ng-click="goHome()">Restaurant Roots</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" ng-if="uiRouterState.current.name === 'home' || uiRouterState.current.name === 'login' || uiRouterState.current.name === 'register'">
+                <li>
+                    <a href="" ng-click="goLogin()">Ingresar</a>
+                </li>
+                <li>
+                    <a href="" ng-click="goSignup()">Registrarse</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right" ng-if="uiRouterState.current.name !== 'home' && uiRouterState.current.name !== 'login' && uiRouterState.current.name !== 'register'">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="" ng-click="goDashboard()">Inicio</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="" ng-click="goReserva()">Reserva</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="" ng-click="goProducto()">Producto</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="" ng-click="goFacturacion()">Facturacion</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

@@ -1,0 +1,100 @@
+<div class="container" style="width: 90%;">
+    <div class="card card-container1 card-reserva" style="margin-top : 100px;">
+        <div class="row">
+            <div ng-click="select(1,'green')" class="1 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                <img width="60" height="60" src="app/components/images/table-green.png">
+                <div>
+                    <span class="table-name">Mesa 1</span>
+                </div>
+            </div>
+            <div ng-click="select(2,'green')" class="2 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                <img width="60" height="60" src="app/components/images/table-green.png">
+                <div>
+                    <span class="table-name">Mesa 2</span>
+                </div>
+            </div>
+            <div  ng-click="select(3,'yellow')" class="3 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                <img width="60" height="60" src="app/components/images/table-yellow.png">
+                <div>
+                    <span class="table-name">Mesa 3</span>
+                </div>
+            </div>
+            <div ng-click="select(4,'green')" class="4 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon ">
+                <img width="60" height="60" src="app/components/images/table-green.png">
+                <div>
+                    <span class="table-name">Mesa 4</span>
+                </div>
+            </div>
+            <div ng-click="select(5,'green')" class="5 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                <img width="60" height="60" src="app/components/images/table-green.png">
+                <div>
+                    <span class="table-name">Mesa 5</span>
+                </div>
+            </div>
+            <div ng-click="select(6,'green')"class="6 col-xs-6 col-sm-4 col-md-3 col-lg-2 visible-lg table-icon">
+                <img width="60" height="60" src="app/components/images/table-green.png">
+                <div>
+                    <span class="table-name">Mesa 6</span>
+                </div>
+            </div>
+            <div ng-click="select(7,'green')" class="7 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                <img width="60" height="60" src="app/components/images/table-green.png">
+                <div>
+                    <span class="table-name">Mesa 7</span>
+                </div>
+            </div>
+            <div ng-click="select(8,'yellow')" class="8 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                <img width="60" height="60" src="app/components/images/table-yellow.png">
+                <div>
+                    <span class="table-name">Mesa 8</span>
+                </div>
+            </div>
+            <div ng-click="select(9,'green')" class="9 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                <img width="60" height="60" src="app/components/images/table-green.png">
+                <div>
+                    <span class="table-name">Mesa 9</span>
+                </div>
+            </div>
+            <div ng-click="select(10,'red')" class="10 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                <img width="60" height="60" src="app/components/images/table-red.png">
+                <div>
+                    <span class="table-name">Mesa 10</span>
+                </div>
+            </div>
+            <div ng-click="select(11,'red')" class="11 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                <img width="60" height="60" src="app/components/images/table-red.png">
+                <div>
+                    <span class="table-name">Mesa 11</span>
+                </div>
+            </div>
+            <div ng-click="select(12,'red')" class="12 col-xs-6 col-sm-4 col-md-3 col-lg-2 visible-lg table-icon">
+                <img width="60" height="60" src="app/components/images/table-red.png">
+                <div>
+                    <span class="table-name">Mesa 12</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span class="table-name">{{message}}</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <span><img width="10" height="10" style="background: green"></span>
+            <span>Mesa Disponible</span>
+        </div>
+        <div class="col-md-4">
+            <span><img width="10" height="10" style="background: yellow"></span>
+            <span>Mesa Reservada</span>
+        </div>
+        <div class="col-md-4">
+            <span><img width="10" height="10" style="background: red"></span>
+            <span>Mesa Ocupada</span>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:30px;">
+        <button type="button" ng-click="registerTable()" class="btn btn-primary">Registrar</button>
+    </div>
+</div><!-- /container -->

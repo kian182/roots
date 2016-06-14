@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="intro-text dashboard-intro-text">
+        <div class="intro-lead-in dashboard-lead-in">We offer you the</div>
+        <div class="intro-heading dashboard-heading"
+             style="font-weight: lighter;
+                    font-size: 30px;
+                    font-style: italic;
+                    text-transform: capitalize;">
+            Best & Delicious Food
+        </div>
+    </div>
+
+    <div style="width: 80%; margin: 0 auto;">
+        <div higgidy-carousel='images' timeout="4000">
+            <ul higgidy-carousel-images>
+                <li ng-repeat="image in images">
+                    <a href="{{image.link}}">
+                        <img height="250"  ng-src="{{image.src}}" alt="{{img.alt}}" />
+                    </a>
+                </li>
+            </ul>
+            <nav class="links">
+                <ul>
+                    <li ng-repeat="image in images">
+                        <a href="" ng-click="show($index)" ng-class="{selected: carousel.current == $index}">
+                            {{$index}}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+

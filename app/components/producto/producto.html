@@ -1,0 +1,269 @@
+<div class="container" style="width: 100%;">
+    <div class="card card-container1 card-produto" style="margin-top : 80px;">
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="sidebar-nav">
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="visible-xs navbar-brand">Productos</span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><span class="badge" style="margin-bottom: 5px;">Tipo de producto</span></li>
+                                <li><a href="" ng-click="choose('bebidas')">Bebidas</a></li>
+                                <li><a href="" ng-click="choose('almuerzos')">Almuerzos</a></li>
+                                <li><a href="" ng-click="choose('licores')">Licores</a></li>
+                                <li><a href="" ng-click="choose('express')">Platos Express</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- BEBIDAS -->
+            <div class="col-sm-9" ng-if="prodSelection === 'bebidas'">
+                <div>
+                    <h5>Bebidas</h5>
+                </div>
+                <div class="row">
+                    <div class="panel panel-default" style="background: rgba(0,0,0,0.4)">
+                        <div class="panel-body">
+                            <div ng-click="select(1,1)" class="1.1 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%%" height="85" src="../app/components/images/productos/drink1.png">
+                                <div>
+                                    <span class="table-name-prod">Mesa 1</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(1,2)" class="1.2 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="30%" height="85" src="../app/components/images/productos/drink2.png">
+                                <div>
+                                    <span class="table-name-prod">Mesa 2</span>
+                                </div>
+                            </div>
+                            <div  ng-click="select(1,3)" class="1.3 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/drink3.png">
+                                <div>
+                                    <span class="table-name-prod">Mesa 3</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(1,4)" class="1.4 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon ">
+                                <img width="60%" height="85" src="../app/components/images/productos/drink4.png">
+                                <div>
+                                    <span class="table-name-prod">Mesa 4</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(1,5)" class="1.5 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/drink5.png">
+                                <div>
+                                    <span class="table-name-prod">Mesa 5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALMUERZO -->
+            <div class="col-sm-9" ng-if="prodSelection === 'almuerzos'">
+                <div>
+                    <h5>Almuerzos</h5>
+                </div>
+
+                <div class="row">
+                    <div class="panel panel-default" style="background: rgba(0,0,0,0.4)">
+                        <span>Sopas</span>
+                        <div class="panel-body">
+                            <div ng-click="select(2,1)" class="2.1 col-xs-6 col-sm-4 col-md-4 col-lg-2 table-icon">
+                                <img width="60%%" height="85" src="../app/components/images/productos/sp1.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 1</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(2,2)" class="2.2 col-xs-6 col-sm-4 col-md-4 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/sp2.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 2</span>
+                                </div>
+                            </div>
+                            <div  ng-click="select(2,3)" class="2.3 col-xs-6 col-sm-4 col-md-4 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/sp3.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="background: rgba(0,0,0,0.4)">
+                        <span>Segundo</span>
+                        <div class="panel-body">
+                            <div ng-click="select(2,1)" class="2.1 col-xs-6 col-sm-4 col-md-4 col-lg-2 table-icon">
+                                <img width="60%%" height="85" src="../app/components/images/productos/ln1.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 1</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(2,2)" class="2.2 col-xs-6 col-sm-4 col-md-4 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/ln2.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 2</span>
+                                </div>
+                            </div>
+                            <div  ng-click="select(2,3)" class="2.3 col-xs-6 col-sm-4 col-md-4 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/ln3.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="background: rgba(0,0,0,0.4)">
+                        <span>Postres</span>
+                        <div class="panel-body">
+                            <div ng-click="select(2,1)" class="2.1 col-xs-6 col-sm-4 col-md-4 col-lg-2 table-icon">
+                                <img width="60%%" height="85" src="../app/components/images/productos/des1.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 1</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(2,2)" class="2.2 col-xs-6 col-sm-4 col-md-4 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/des2.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 2</span>
+                                </div>
+                            </div>
+                            <div  ng-click="select(2,3)" class="2.3 col-xs-6 col-sm-4 col-md-4 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/des3.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- LICORES -->
+            <div class="col-sm-9" ng-if="prodSelection === 'licores'">
+                <div>
+                    <h5>Licores</h5>
+                </div>
+                <div class="row">
+                    <div class="panel panel-default" style="background: rgba(0,0,0,0.4)">
+                        <div class="panel-body">
+                            <div ng-click="select(1,1)" class="1.1 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%%" height="85" src="../app/components/images/productos/lc1.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 1</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(1,2)" class="1.2 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/lc2.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 2</span>
+                                </div>
+                            </div>
+                            <div  ng-click="select(1,3)" class="1.3 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/lc3.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 3</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(1,4)" class="1.4 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon ">
+                                <img width="60%" height="85" src="../app/components/images/productos/lc4.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 4</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(1,5)" class="1.5 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/lc5.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXPRESS -->
+            <div class="col-sm-9" ng-if="prodSelection === 'express'">
+                <div>
+                    <h5>Especiales</h5>
+                </div>
+                <div class="row">
+                    <div class="panel panel-default" style="background: rgba(0,0,0,0.4)">
+                        <div class="panel-body">
+                            <div ng-click="select(1,1)" class="1.1 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%%" height="85" src="../app/components/images/productos/esp1.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 1</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(1,2)" class="1.2 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/esp2.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 2</span>
+                                </div>
+                            </div>
+                            <div  ng-click="select(1,3)" class="1.3 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/esp3.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 3</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(1,4)" class="1.4 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon ">
+                                <img width="60%" height="85" src="../app/components/images/productos/esp4.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 4</span>
+                                </div>
+                            </div>
+                            <div ng-click="select(1,5)" class="1.5 col-xs-6 col-sm-4 col-md-3 col-lg-2 table-icon">
+                                <img width="60%" height="85" src="../app/components/images/productos/esp5.jpg">
+                                <div>
+                                    <span class="table-name-prod">Mesa 5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div><!-- /container -->
+
+
+<style>
+    /* make sidebar nav vertical */
+    @media (min-width: 768px) {
+        .sidebar-nav .navbar .navbar-collapse {
+            padding: 0;
+            max-height: none;
+        }
+        .sidebar-nav .navbar ul {
+            float: none;
+        }
+        .sidebar-nav .navbar ul:not {
+            display: block;
+        }
+        .sidebar-nav .navbar li {
+            float: none;
+            display: block;
+        }
+        .sidebar-nav .navbar li a {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
+</style>

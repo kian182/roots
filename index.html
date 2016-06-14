@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="MainController as main">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Raices</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- App stylesheets-->
+    <link href="app/components/carousel/higgidy_carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="app/main/main.css" rel="stylesheet">
+    <link href="app/components/dashboard/dashboard.css" rel="stylesheet">
+    <link href="app/components/reserva/reserva.css" rel="stylesheet">
+    <link href="app/components/producto/producto.css" rel="stylesheet">
+    <link href="app/components/facturacion/facturacion.css" rel="stylesheet">
+    <!--<style>-->
+        <!--ul {-->
+            <!--height:300px;-->
+            <!--width: 600px;-->
+            <!--background:blue;-->
+        <!--}-->
+        <!--img.alignLeft {-->
+            <!--float: left;-->
+        <!--}-->
+    <!--</style>-->
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navbar -->
+    <div ng-controller="NavbarController" class="navbar-container">
+        <div  ng-include="'app/components/navbar/navbar.html'">
+            <!--<acme-navbar creation-date="main.creationDate"></acme-navbar>-->
+        </div>
+    </div>
+    <!-- Header -->
+    <header ng-style="{'background-image':'url('+background+')'}">
+        <!--<div class="container">-->
+
+            <div ui-view></div>
+            <!--<div class="intro-text">-->
+                <!--<div class="intro-lead-in">Welcome To Our Studio!</div>-->
+                <!--<div class="intro-heading">It's Nice To Meet You</div>-->
+                <!--<a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>-->
+            <!--</div>-->
+        <!--</div>-->
+            <span class="signout-label" ng-if="uiRouterState.current.name !== 'home' && uiRouterState.current.name !== 'login' && uiRouterState.current.name !== 'register'">
+                <a href="" ng-click="goSignout()">Cerrar Sesion</a>
+            </span>
+    </header>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!--<script src="js/classie.js"></script>-->
+    <!--<script src="js/cbpAnimatedHeader.js"></script>-->
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <!--<script src="js/agency.js"></script>-->
+
+    <!-- App Dependencies-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+
+    <!-- App Components/Files-->
+    <script src="app/index.module.js"></script>
+    <script src="app/index.route.js"></script>
+    <script src="app/index.run.js"></script>
+    <script src="app/components/carousel/higgidy_carousel.js"></script>
+    <!-- Controllers -->
+    <script src="app/main/main.controller.js"></script>
+    <script src="app/components/navbar/navbar.controller.js"></script>
+    <script src="app/components/login/login.controller.js"></script>
+    <script src="app/components/register/register.controller.js"></script>
+    <script src="app/components/dashboard/dashboard.controller.js"></script>
+    <script src="app/components/reserva/reserva.controller.js"></script>
+    <script src="app/components/producto/producto.controller.js"></script>
+    <script src="app/components/facturacion/facturacion.controller.js"></script>
+    <!-- Services -->
+    <script src="app/components/services/session.service.js"></script>
+</body>
+
+</html>

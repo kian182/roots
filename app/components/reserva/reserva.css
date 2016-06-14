@@ -1,0 +1,35 @@
+.card-reserva{
+    background: rgba(247,247,247,0.8);
+}
+.btn-primary {
+    color: #fff;
+    background-color: #B00000;
+    border-color: #B00000;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: 	#900000;
+    border-color: 	#900000;
+}
+
+.btn-primary:focus {
+    color: #fff;
+    background-color: 	#900000;
+    border-color: 	#900000;
+}
+
+.table-icon{
+    cursor:pointer;
+}
+
+.table-icon:hover{
+    background: #F0F0F0 ;
+}
+.table-icon.focus{
+    background: #B0C4DE ;
+    outline: 1px solid white;
+}
+.table-name{
+    color:#404040
+}
