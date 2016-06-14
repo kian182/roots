@@ -24,7 +24,7 @@
                 </li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right" ng-if="uiRouterState.current.name !== 'home' && uiRouterState.current.name !== 'login' && uiRouterState.current.name !== 'register'">
+            <ul class="nav navbar-nav navbar-right" ng-if="uiRouterState.current.name !== 'home' && uiRouterState.current.name !== 'login' && uiRouterState.current.name !== 'register' && !admin">
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
@@ -39,6 +39,18 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="" ng-click="goFacturacion()">Facturacion</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right" ng-if="uiRouterState.current.name !== 'home' && uiRouterState.current.name !== 'login' && uiRouterState.current.name !== 'register' && admin">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="" ng-click="goDashboard()">Inventario</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="" ng-click="goReserva()">Reporte</a>
                 </li>
             </ul>
         </div>

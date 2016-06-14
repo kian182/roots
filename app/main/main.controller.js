@@ -6,7 +6,13 @@ angular.module('app')
 /** @ngInject */
 function MainController($scope,$state,Session) {
 
+    console.log('main controller');
     $scope.uiRouterState = $state;
+    $scope.uiRouterState = $state;
+    $scope.admin = Session.get('admin');
+
+
+
     $scope.images = [
         {
             src: "app/components/carousel/images/higgidy_1.jpg",
@@ -30,8 +36,15 @@ function MainController($scope,$state,Session) {
         }
     ];
 
+    $scope.init = function(){
+
+    };
+
     $scope.goSignout = function(){
         $state.go('home');
+        Session.set('admin',false);
     };
+
+    $scope.init();
 
 }

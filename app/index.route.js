@@ -49,6 +49,12 @@
                 templateUrl: 'app/components/facturacion/facturacion.html',
                 controller: 'FacturacionController',
                 controllerAs: 'facturacion'
+            })
+            .state('admin-dashboard', {
+                url: '/admin/dashboard',
+                templateUrl: 'app/components/admin/dashboard/dashboardAdmin.html',
+                controller: 'AdminDashboardController',
+                controllerAs: 'adminDashboard'
             });
 
         $urlRouterProvider.otherwise('/');
