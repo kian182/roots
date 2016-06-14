@@ -4,7 +4,7 @@ angular.module('app')
     .controller('NavbarController', NavbarController);
 
 /** @ngInject */
-function NavbarController($scope,$state,Session) {
+function NavbarController($scope,$state,Session,$rootScope) {
 
 
     $scope.menu = $state;
@@ -17,12 +17,19 @@ function NavbarController($scope,$state,Session) {
     };
 
     $scope.goHome = function(){
-        if(!Session.get('user') || !Session.get('user').user || Session.get('user').user===''){
-            $state.go('home');
+        console.log($scope.admin);
+        if(!$scope.admin){
+            if(!Session.get('user') || !Session.get('user').user || Session.get('user').user===''){
+                $state.go('home');
+            }
+            else{
+                $state.go('dashboard');
+            }
         }
         else{
-            $state.go('dashboard');
+            $state.go('admin-dashboard');
         }
+
     };
 
     $scope.goDashboard = function(){
@@ -40,5 +47,14 @@ function NavbarController($scope,$state,Session) {
     $scope.goFacturacion = function(){
         $state.go('facturacion');
     };
+
+    $scope.goInventario = function(){
+        $state.go('inventario');
+    };
+
+    $scope.goReportes = function(){
+        $state.go('reportes');
+    };
+
 
 }

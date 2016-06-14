@@ -1,10 +1,117 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div class="container" style="width: 100%;">
+    <div class="card card-container1 card-produto" style="margin-top : 80px;">
 
-</body>
-</html>
+        <div class="row" style="margin-bottom: 10px;">
+            <span>INVENTARIO DE PRODUCTOS</span>
+        </div>
+
+        <div class="row">
+
+            <!--<div class="col-sm-12">-->
+                <!--<div>-->
+                    <!--<h5>Inventario de Productos</h5>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                    <!--<div class="panel panel-default" style="background: rgba(0,0,0,0.4)">-->
+                        <!--<div class="panel-body">-->
+                            <!---->
+
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <div class="row">
+                <span style="float:left; margin-left:15px; margin-bottom: 5px;">
+                Carnes y Embutidos
+            </span>
+            </div>
+
+
+            <div class="table-responsive">
+                <table class="inventory table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Codigo</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="table in table1">
+                        <th scope="row">{{table.number}}</th>
+                        <td>{{table.code}}</td>
+                        <td>{{table.name}}</td>
+                        <td>{{table.unit}}</td>
+                        <td>{{table.price}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="row">
+                <span style="float:left; margin-left:15px; margin-bottom: 5px;">
+                Vegetales
+            </span>
+            </div>
+
+
+            <div class="table-responsive">
+                <table class="inventory table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Codigo</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="table in table1">
+                        <th scope="row">{{table.number}}</th>
+                        <td>{{table.code}}</td>
+                        <td>{{table.name}}</td>
+                        <td>{{table.unit}}</td>
+                        <td>{{table.price}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* make sidebar nav vertical */
+    @media (min-width: 768px) {
+        .sidebar-nav .navbar .navbar-collapse {
+            padding: 0;
+            max-height: none;
+        }
+        .sidebar-nav .navbar ul {
+            float: none;
+        }
+        .sidebar-nav .navbar ul:not {
+            display: block;
+        }
+        .sidebar-nav .navbar li {
+            float: none;
+            display: block;
+        }
+        .sidebar-nav .navbar li a {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
+    .inventory th{
+        text-align: center;
+    }
+</style>
+

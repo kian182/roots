@@ -144,7 +144,7 @@
 /*Signout Label*/
 .signout-label{
     bottom: 10px;
-    position: absolute;
+    /*position: absolute;*/
     right: 15px;
 }
 .signout-label a{

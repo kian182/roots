@@ -55,6 +55,18 @@
                 templateUrl: 'app/components/admin/dashboard/dashboardAdmin.html',
                 controller: 'AdminDashboardController',
                 controllerAs: 'adminDashboard'
+            })
+            .state('inventario', {
+                url: '/admin/inventario',
+                templateUrl: 'app/components/admin/inventario/inventario.html',
+                controller: 'InventarioController',
+                controllerAs: 'inventario'
+            })
+            .state('reportes', {
+                url: '/admin/reportes',
+                templateUrl: 'app/components/admin/reportes/reportes.html',
+                controller: 'ReportesController',
+                controllerAs: 'reportes'
             });
 
         $urlRouterProvider.otherwise('/');

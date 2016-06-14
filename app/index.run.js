@@ -27,6 +27,12 @@
                 case '/facturacion':
                     $rootScope.background = "http://backwatersbarandgrill.com/wp-content/uploads/2014/02/BWBG-Background.jpg";
                     break;
+                case '/admin/inventario':
+                    $rootScope.background = "http://backwatersbarandgrill.com/wp-content/uploads/2014/02/BWBG-Background.jpg";
+                    break;
+                case '/admin/reportes':
+                    $rootScope.background = "http://backwatersbarandgrill.com/wp-content/uploads/2014/02/BWBG-Background.jpg";
+                    break;
                 default:
                     $rootScope.background = "../app/components/images/restaurant.jpg";
                     break;
