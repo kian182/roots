@@ -143,9 +143,12 @@
 
 /*Signout Label*/
 .signout-label{
-    bottom: 10px;
-    /*position: absolute;*/
+    /*bottom: 10px;*/
+    position: absolute;
+    /*right: 15px;*/
+    top: 75px;
     right: 15px;
+    font-size: 10px;
 }
 .signout-label a{
     color: white;
